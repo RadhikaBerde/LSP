@@ -31,7 +31,9 @@ int main(int argc, char * argv[])
    }
    
    write(fd,Buffer,5);
-  
+
+   close(fd);
+   
    return 0;
   
 }
