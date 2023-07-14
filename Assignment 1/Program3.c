@@ -64,6 +64,8 @@ int main(int argc, char * argv[])
    {
       printf("Entered Invalid Mode\n");
    }
- 
+
+   close(fd);
+   
    return 0;
 }
