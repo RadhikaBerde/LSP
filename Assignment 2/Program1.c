@@ -36,6 +36,8 @@ int main(int argc , char *argv[])
    {
         write(1,Buffer,iRet);
    }
+
+   close(fd);
    
    return 0;
 }
