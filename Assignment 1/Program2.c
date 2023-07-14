@@ -49,6 +49,8 @@ int main(int argc , char * argv[])
    {
       printf("File opened sucessfully with fd : %d\n", fd);
    }
+
+   close(fd);
    
    return 0;
 }
