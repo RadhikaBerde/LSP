@@ -25,5 +25,6 @@ int main(int argc , char * argv[])
       printf("File opened successfully with fd : %d\n", fd);
    }
    
+   close(fd);
    return 0;
 }
