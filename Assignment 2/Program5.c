@@ -1,4 +1,4 @@
-/* 5. Write a program which accepts directory name from user & print name of such a file having largest size. */
+/* 5. Write a program which accepts directory name from user & print name of such a file having largest size. */ 
 
 #include<stdio.h>
 #include<fcntl.h>
