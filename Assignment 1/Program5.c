@@ -47,6 +47,8 @@ int main(int argc , char * argv[])
   {
     printf("Data from file is : %s\n", Buffer);
   }
+
+  close(fd);
   
   return 0;
 }
