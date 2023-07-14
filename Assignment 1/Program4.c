@@ -7,7 +7,7 @@
 
 int main(int argc, char * argv[])
 {
-    int fd =0;
+    int fd = 0;
     struct stat sobj;
     
     printf("Usage : Name_of_Executable Name_of_file \n");
@@ -47,6 +47,8 @@ int main(int argc, char * argv[])
     printf("Last access time of the file : %ld\n", sobj.st_atime);
     printf("Last modification time of the file : %ld\n", sobj.st_mtime);
     printf("last status change time of the file: %ld\n", sobj.st_ctime);
+    
+    close(fd);
     
     return 0;
 }
