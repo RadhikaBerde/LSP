@@ -1,4 +1,4 @@
-/* 4. Write a program which accepts directory name from user & print all file names & its type from that directory. */
+/* 4. Write a program which accepts directory name from user & print all file names & its type from that directory. */ 
 
 #include<stdio.h>
 #include<fcntl.h>
