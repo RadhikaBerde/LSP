@@ -34,13 +34,29 @@ int main(int argc, char * argv[])
     {
         printf("File Name : %20s   Type : %d   ",entry->d_name, entry->d_type);
         
-        if( entry->d_type == 8)
+        if( entry->d_type == DT_REG)
         {
            printf("Its a regular File\n");
         }
-        if( entry->d_type == 4)
+        else if( entry->d_type == DT_DIR)
         {
            printf("Its a directory File\n");
+        }
+        else if( entry->d_type == DT_DIR)
+        {
+           printf("Its a directory File\n");
+        }
+        else if( entry->d_type == DT_CHR)
+        {
+           printf("Its a character Device\n");
+        }
+        else if( entry->d_type == DT_BLK)
+        {
+           printf("Its a block device\n");
+        }
+        else if( entry->d_type == DT_LNK)
+        {
+           printf("Its a Symbolic link \n");
         }
     }
    
