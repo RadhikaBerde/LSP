@@ -41,3 +41,9 @@ int main()
     
     return 0;
 }
+
+//Steps :
+//gcc -c -fPIC sharedfile.c
+//gcc -shared -o library.so sharedfile.o
+//gcc -rdynamic -o Myexe Program1.c
+//./Myexe
