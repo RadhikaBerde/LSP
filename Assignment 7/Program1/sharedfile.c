@@ -1,29 +1,29 @@
 #include "sharedfile.h"
 
-int Addition(int ino1, int ino2)
+int Addition(int iNo1, int iNo2)
 {
     int iAns = 0;
-    iAns = 10 + 11;
-    printf("Addition is : %d\n", iAns);
+    iAns = iNo1 + iNo2;
+    return iAns;
 }
 
-int Substraction(int no1, int no2)
+int Substraction(int iNo1, int iNo2)
 {
     int iAns = 0;
-    iAns = 11 - 10;
-    printf("Substraction is : %d\n", iAns);
+    iAns = iNo1 - iNo2;;
+    return iAns;
 }
 
-int Multiplication(int no1, int no2)
+int Multiplication(int iNo1, int iNo2)
 {
     int iAns = 0;
-    iAns = no1 * no2;
-    printf("Multiplication is : %d\n", iAns);
+    iAns = iNo1 * iNo2;;
+    return iAns;
 }
 
-int Division(int no1, int no2)
+int Division(int iNo1, int iNo2)
 {
     int iAns = 0;
-    iAns = no1 / no2;
-    printf("Division is : %d\n", iAns);
+    iAns = iNo1 / iNo2;;
+    return iAns;
 }
