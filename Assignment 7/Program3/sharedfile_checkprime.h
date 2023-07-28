@@ -1,0 +1,1 @@
+int CheckPrime(int iNo);
