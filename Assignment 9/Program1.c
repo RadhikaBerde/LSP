@@ -22,7 +22,7 @@ int main()
    {
       printf("Inside child process\n");
     
-      dp = opendir("dynamic");
+      dp = opendir("Desktop");
     
       if(dp == NULL)
       {
