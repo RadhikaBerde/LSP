@@ -12,11 +12,11 @@ int main()
     pid = getpid();
  
     // Get the priority of the current process
-    priority = getpriority(PRIO_PROCESS, pid);
+    priority = getpriority(PRIO_PROCESS, 0);
 
     if (priority == -1) 
     {
-        perror("Error getting process priority");
+        printf("Error getting process priority");
         return 1;
     }
 
