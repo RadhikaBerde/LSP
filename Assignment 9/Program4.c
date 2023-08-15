@@ -1,8 +1,9 @@
-/* 4. Write a program which is used to increate priority by 5. */
+/* 4. Write a program which is used to increase priority by 5. */
 
-#include <stdio.h>
-#include <sys/time.h>
-#include <sys/resource.h>
+#include<stdio.h>
+#include<stdlib.h>
+#include<unistd.h>
+#include<sys/resource.h>
 
 int main() 
 {
@@ -14,7 +15,7 @@ int main()
     printf("Current priority of the process is: %d\n", ret);
 
     // Increase the priority by 5
-    ret = nice(5);
+    nice(-5);
 
     // Get the updated priority
     ret = getpriority(PRIO_PROCESS, 0);
@@ -23,6 +24,8 @@ int main()
 
     return 0;
 }
+
+
 
 
    
