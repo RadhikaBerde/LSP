@@ -6,41 +6,24 @@
 
 int main() 
 {
-    int pid = 0;
-    int priority = 0;
-    int Ret = 0;
+    int ret = 0;
     
-    pid = getpid();
-
     // Get the current priority of the process
-    priority = getpriority(PRIO_PROCESS, pid);
+    ret = getpriority(PRIO_PROCESS, 0);
 
-    if (priority == -1)
-    {
-        printf("Error getting process priority");
-        return -1;
-    }
-
-    printf("Current priority of the process is: %d\n", pid, priority);
+    printf("Current priority of the process is: %d\n", ret);
 
     // Increase the priority by 5
-    Ret = setpriority(PRIO_PROCESS, pid, priority + 5);
-    if (Ret == -1)
-    {
-        printf("Error setting process priority");
-        return -1;
-    }
+    ret = nice(5);
 
     // Get the updated priority
-    priority = getpriority(PRIO_PROCESS, pid);
+    ret = getpriority(PRIO_PROCESS, 0);
 
-    if (priority == -1) 
-    {
-        printf("Error getting process priority");
-        return 1;
-    }
-
-    printf("Updated priority of the process (PID %d) is: %d\n", pid, priority);
+    printf("Updated priority of the process is: %d\n", ret);
 
     return 0;
 }
+
+
+   
+
